@@ -1,0 +1,1965 @@
+{
+  "config": {
+    "configFile": "D:\\Automation practice\\PlaywrightPractice\\playwright.config.ts",
+    "rootDir": "D:/Automation practice/PlaywrightPractice/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Automation practice/PlaywrightPractice/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Automation practice/PlaywrightPractice/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "D:\\Automation practice\\PlaywrightPractice\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "annotations.spec.ts",
+      "file": "annotations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Skipping  Test2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                    "line": 12,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:35:38.965Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                        "line": 12,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b24767b8199df0caea11-3c5521e3422761286eec",
+          "file": "annotations.spec.ts",
+          "line": 12,
+          "column": 6
+        },
+        {
+          "title": "Fixing Test3 later",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "location": {
+                    "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                    "line": 17,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:35:38.980Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "location": {
+                        "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                        "line": 17,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b24767b8199df0caea11-c19bd50247f1d5fe6a56",
+          "file": "annotations.spec.ts",
+          "line": 17,
+          "column": 6
+        },
+        {
+          "title": "Expected to fail Test4",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fail",
+                  "location": {
+                    "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                    "line": 24,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "failed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 3,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test4...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:35:40.440Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                        "line": 24,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 12,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test4...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-02-26T04:35:43.657Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                        "line": 24,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Automation practice\\PlaywrightPractice\\test-results\\annotations-Expected-to-fail-Test4-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 6,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test4...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-02-26T04:35:45.654Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                        "line": 24,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b24767b8199df0caea11-c13b5541835f5534a18c",
+          "file": "annotations.spec.ts",
+          "line": 24,
+          "column": 6
+        },
+        {
+          "title": "Slow Test5",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test5...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:35:40.457Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "D:\\Automation practice\\PlaywrightPractice\\tests\\annotations.spec.ts",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b24767b8199df0caea11-e2f1a313b81bdc62d3da",
+          "file": "annotations.spec.ts",
+          "line": 30,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "checkboxes.spec.ts",
+      "file": "checkboxes.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "working with checkboxes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4944,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:35:40.559Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8c2167712228c520efe-6a87a7120a4be048d26f",
+          "file": "checkboxes.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "codgen.spec.ts",
+      "file": "codgen.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10694,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:35:40.478Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1a4364795f5b924df118-efee502ee253af94b4cd",
+          "file": "codgen.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "dailog.spec.ts",
+      "file": "dailog.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Working with Alerts.",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 4828,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Press a button!\n"
+                    },
+                    {
+                      "text": "\u001b[36m[Function: type]\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:35:40.516Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5a9710b00de4de4208ec-001a934b8534efaeda4f",
+          "file": "dailog.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "dataFromCsv.spec.ts",
+      "file": "dataFromCsv.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Data Driven Tests - CSV",
+          "file": "dataFromCsv.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login test with Admin and admin123",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 11777,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:35:48.212Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fcd845ff8c495755bd9a-3306143881bdff4ff809",
+              "file": "dataFromCsv.spec.ts",
+              "line": 25,
+              "column": 9
+            },
+            {
+              "title": "Login test with Admin and wrong123",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8796,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:35:45.833Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fcd845ff8c495755bd9a-723b53d8d712396c1d32",
+              "file": "dataFromCsv.spec.ts",
+              "line": 25,
+              "column": 9
+            },
+            {
+              "title": "Login test with User1 and pass123",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8631,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:35:46.721Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fcd845ff8c495755bd9a-3ca29dbf5301d8e49457",
+              "file": "dataFromCsv.spec.ts",
+              "line": 25,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dataFromJson.spec.ts",
+      "file": "dataFromJson.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Data Driven Tests -Json",
+          "file": "dataFromJson.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login test with Admin and admin123",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12368,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:35:51.574Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "14748222c3c86370b715-bccee68ae45a47da249f",
+              "file": "dataFromJson.spec.ts",
+              "line": 18,
+              "column": 9
+            },
+            {
+              "title": "Login test with Admin and wrong123",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 18179,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:35:54.701Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "14748222c3c86370b715-e91fb8911a50c4cd41f5",
+              "file": "dataFromJson.spec.ts",
+              "line": 18,
+              "column": 9
+            },
+            {
+              "title": "Login test with WrongUser and admin123",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12837,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:35:55.416Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "14748222c3c86370b715-6e561ff441c4cf2679ef",
+              "file": "dataFromJson.spec.ts",
+              "line": 18,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "datapicker.spec.ts",
+      "file": "datapicker.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Working with datepickers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 8445,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:00.463Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef5dc1a5d5f4e4c24ff3-850ddae4ddc196c017fe",
+          "file": "datapicker.spec.ts",
+          "line": 42,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "drapAndDrop.spec.ts",
+      "file": "drapAndDrop.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "working with drag and drop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4153,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:04.012Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "56df72bce464e4e56310-47c6bcd6f713a43d6e3f",
+          "file": "drapAndDrop.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "dropdowns.spec.ts",
+      "file": "dropdowns.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "working with dropdowns",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4873,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Total values : \u001b[33m10\u001b[39m\n"
+                    },
+                    {
+                      "text": "\n        United States\n      \n"
+                    },
+                    {
+                      "text": "\n        Canada\n      \n"
+                    },
+                    {
+                      "text": "\n        United Kingdom\n      \n"
+                    },
+                    {
+                      "text": "\n        Germany\n      \n"
+                    },
+                    {
+                      "text": "\n        France\n      \n"
+                    },
+                    {
+                      "text": "\n        Australia\n      \n"
+                    },
+                    {
+                      "text": "\n        Japan\n      \n"
+                    },
+                    {
+                      "text": "\n        China\n      \n"
+                    },
+                    {
+                      "text": "\n        Brazil\n      \n"
+                    },
+                    {
+                      "text": "\n        India\n      \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:08.216Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "749c864ab9b04165abdd-b54e77c9409be8b0571a",
+          "file": "dropdowns.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "fileUpload.spec.ts",
+      "file": "fileUpload.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "working with file uploads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4831,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "D:\\Automation practice\\PlaywrightPractice\\TestData\\sample.txt\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:08.304Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "87968046447124665a1a-0edd012b7c9c7e420e0f",
+          "file": "fileUpload.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "first_test.spec.ts",
+      "file": "first_test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "First Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 8,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "This is my first test...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:08.972Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "842154b669dec00f318e-ef96a9afd95eb884cc8a",
+          "file": "first_test.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "Verify Page Title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 15769,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "The page title is  OrangeHRM\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:09.047Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "842154b669dec00f318e-c6d0adf49488cebc2834",
+          "file": "first_test.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "flakyTest.spec.ts",
+      "file": "flakyTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Working with Flaky Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 9699,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:13.045Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4f28f8fdd32bcc7c5a29-45c565c50128c1c8edfb",
+          "file": "flakyTest.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "grouping.spec.ts",
+      "file": "grouping.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Group1",
+          "file": "grouping.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Test1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "test 1...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:36:13.137Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4d442965276aac83001c-b2ab6378bed2f30745ca",
+              "file": "grouping.spec.ts",
+              "line": 7,
+              "column": 9
+            },
+            {
+              "title": "Test2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "test 2...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:36:13.184Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4d442965276aac83001c-ac3c5be4a3897b0c888c",
+              "file": "grouping.spec.ts",
+              "line": 11,
+              "column": 10
+            }
+          ]
+        },
+        {
+          "title": "Group2",
+          "file": "grouping.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Test3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "test 3...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:36:13.190Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4d442965276aac83001c-123d5ea50c6b124ccffd",
+              "file": "grouping.spec.ts",
+              "line": 19,
+              "column": 9
+            },
+            {
+              "title": "Test4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "test 4...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-26T04:36:13.246Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4d442965276aac83001c-2512a96ea0ad4be1f21c",
+              "file": "grouping.spec.ts",
+              "line": 23,
+              "column": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "hooks.spec.ts",
+      "file": "hooks.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Tests",
+          "file": "hooks.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login with Valid creds",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 9609,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Entering credentials",
+                          "duration": 1034
+                        },
+                        {
+                          "title": "Clicking Login button",
+                          "duration": 1859
+                        },
+                        {
+                          "title": "Verify Login status",
+                          "duration": 997
+                        }
+                      ],
+                      "startTime": "2026-02-26T04:36:13.295Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51aeaffe3cd5383f5106-251e7354d6bb0a38955e",
+              "file": "hooks.spec.ts",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Login with Invalid creds",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9927,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Entering credentials",
+                          "duration": 1262
+                        },
+                        {
+                          "title": "Clicking Login button",
+                          "duration": 1508
+                        },
+                        {
+                          "title": "Verify Login status",
+                          "duration": 1040
+                        }
+                      ],
+                      "startTime": "2026-02-26T04:36:13.334Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "51aeaffe3cd5383f5106-615f7a277515e7473020",
+              "file": "hooks.spec.ts",
+              "line": 40,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "iframes.spec.ts",
+      "file": "iframes.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Working with iframes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6181,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:22.788Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b015d4919dc80cf5ca62-59074a086c4d9bafc9fa",
+          "file": "iframes.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "input.spec.ts",
+      "file": "input.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Working with input text form",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4152,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:22.978Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "62978389d577d9e03e88-64546db0b167c3bc8da6",
+          "file": "input.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "locators.spec.ts",
+      "file": "locators.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Builtin Locators",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2083,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "The button is visble\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:23.328Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "abbba80301da790c63e3-73cdd8bc28ef18cd0ad6",
+          "file": "locators.spec.ts",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "verify css and xpath Selectors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2416,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:24.865Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "abbba80301da790c63e3-43890f698e547f36492d",
+          "file": "locators.spec.ts",
+          "line": 50,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "POM.spec.ts",
+      "file": "POM.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login tests",
+          "file": "POM.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11223,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Login to Application",
+                          "duration": 3242
+                        },
+                        {
+                          "title": "Verify Dashbaord Visible",
+                          "duration": 1138
+                        }
+                      ],
+                      "startTime": "2026-02-26T04:36:25.465Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "974e210a47c13ca675c2-5619d17355cdf4445ecd",
+              "file": "POM.spec.ts",
+              "line": 14,
+              "column": 9
+            },
+            {
+              "title": "Login with Invalid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12416,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Login to Application",
+                          "duration": 3003
+                        },
+                        {
+                          "title": "Verify invalid creds Visible",
+                          "duration": 2022
+                        }
+                      ],
+                      "startTime": "2026-02-26T04:36:27.186Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "974e210a47c13ca675c2-72abfc31b0f6f1fd8f98",
+              "file": "POM.spec.ts",
+              "line": 26,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "radiobtn.spec.ts",
+      "file": "radiobtn.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "work with radio btn",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 4023,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:27.347Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f26aeb91081665665bcc-6324180fce53607cc2f8",
+          "file": "radiobtn.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "second_test.spec.ts",
+      "file": "second_test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "verify page url",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6236,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                    },
+                    {
+                      "text": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:29.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2612e8a3cd0a57964e7c-c0cf69645edf6a28b362",
+          "file": "second_test.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "softVsHardAssertions.spec.ts",
+      "file": "softVsHardAssertions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Working with soft and hard assertions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 11011,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:31.423Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9756dc7a7ee8725585ed-5a14b9d9c3bc47d8e89d",
+          "file": "softVsHardAssertions.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tags.spec.ts",
+      "file": "tags.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test1 @smoke",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 13,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test1...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:35.320Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11922c0a18bf98ba476a-6109939e1c6f366e7315",
+          "file": "tags.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "test2 @regression",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test2...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:35.413Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11922c0a18bf98ba476a-2cb1e13824348e715eb4",
+          "file": "tags.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "test3 @sanity",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test3...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:35.495Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11922c0a18bf98ba476a-cf295e2d88dfe1c7e133",
+          "file": "tags.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "test4",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 13,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test4...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:35.551Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11922c0a18bf98ba476a-669bb165245482079095",
+          "file": "tags.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "test5",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 5,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test5...\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-02-26T04:36:35.639Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "11922c0a18bf98ba476a-826406161cd576ea3107",
+          "file": "tags.spec.ts",
+          "line": 19,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-26T04:35:38.835Z",
+    "duration": 64123.563,
+    "expected": 37,
+    "skipped": 2,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
